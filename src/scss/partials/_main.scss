@@ -1,0 +1,287 @@
+main {
+
+  //common
+  text-align: center;
+
+  //first section, second section
+  .traditional-processes,
+  .teambit-solution {
+    background-color: $primary_color;
+    padding: 0 $sidespace;
+
+    @media screen and (max-width: 1199px) {
+      padding: 0 #{$sidespace / 2};
+    }
+
+    @media screen and (max-width: 991px) {
+      padding: 0 #{$sidespace / $sidespace_divider_xs};
+    }
+
+    h3 {
+
+      padding-top: $linespacing;
+      margin-bottom: $linespacing;
+      line-height: $linespacing;
+
+    }
+
+    span {
+
+      font-weight: lighter;
+
+    }
+
+    .row {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .col {
+
+        flex-basis: calc(100% / 3 - (#{$colmargin} * 2));
+
+        @media screen and (max-width: 1199px) {
+          flex-basis: 100%;
+          margin-bottom: 80px;
+        }
+
+        &:nth-child(2) {
+
+          margin: 0 $colmargin;
+
+          @media screen and (max-width: 1199px) {
+            margin-bottom: 80px;
+          }
+
+        }
+
+        &:nth-child(3) {
+
+          @media screen and (max-width: 1199px) {
+            margin-bottom: 0px;
+          }
+
+        }
+
+        div {
+
+          img {
+
+            height: 120px;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 550px) {
+              height: 110px;
+            }
+
+            @media screen and (max-width: 450px) {
+              height: 100px;
+            }
+
+            @media screen and (max-width: 350px) {
+              height: 90px;
+            }
+
+            @media screen and (max-width: 300px) {
+              height: 70px;
+            }
+
+          }
+
+        }
+
+      }
+
+      &.before {
+
+        border-bottom: 1px solid black;
+
+      }
+
+      &.before,
+      &.after {
+
+        display: flex;
+        justify-content: space-around;
+
+        img {
+
+          display: block;
+          padding: 100px 0;
+          height: 650px;
+
+          @media screen and (max-width: 550px) {
+            height: auto;
+            width: 100%;
+          }
+
+        }
+      }
+    }
+  }
+
+  .teambit-solution {
+
+    padding-top: $linespacing;
+
+  }
+
+  //third section
+  .how-it-works {
+
+    margin-bottom: $linespacing;
+
+    h3 {
+
+      background-color: $primary_color;
+      text-align: center;
+      padding: $linespacing 0;
+      margin: 0;
+
+    }
+
+    .row {
+
+      @include second_section_row;
+
+      @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        padding-left: #{$sidespace / 4};
+        padding-right: #{$sidespace / 4};
+      }
+
+      &:nth-of-type(2n + 2)>.col>div {
+
+        float: right;
+
+        @media screen and (max-width: 1199px) {
+          float: none;
+        }
+
+      }
+
+      h3 {
+
+        margin-top: 10px;
+        margin-bottom: $linespacing;
+        line-height: $linespacing;
+
+      }
+
+      p {
+
+        font-weight: lighter;
+        font-size: 1.5em;
+        margin-bottom: 25px;
+
+      }
+
+      a {
+
+        color: $tertiary_color;
+        font-weight: lighter;
+        font-size: 1.3em;
+
+      }
+
+      img:nth-child(2n + 2) {
+
+        padding: 30px 80px 50px 0;
+
+        @media screen and (max-width: 1199px) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+  //fourth section
+  .get-started {
+
+    background-color: $primary_color;
+    padding-top: $linespacing;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+
+      line-height: 90px;
+      margin-bottom: $linespacing;
+
+      img {
+
+        margin-left: 5px;
+
+      }
+
+    }
+
+    .p-box {
+
+      text-align: left;
+      font-weight: lighter;
+      background-color: white;
+      margin: auto;
+      margin-bottom: 80px;
+      width: 85%;
+      max-width: 600px;
+      border: 2px solid $tertiary_color;
+      border-radius: 20px;
+      padding: 20px 25px;
+
+      @media screen and (max-width: 991px) {
+        font-size: 1.1em;
+      }
+
+      .signature-box {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media screen and (max-width: 350px) {
+          display: block;
+        }
+
+        img {
+
+          height: 65px;
+          margin-right: 20px;
+
+        }
+
+        .signature {
+
+          span:first-child {
+
+            color: $tertiary_color;
+
+          }
+
+          span:nth-child(3) {
+
+            font-size: 0.9em;
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .cta {
+
+      @include call-to-action;
+      padding-bottom: $linespacing;
+
+    }
+
+  }
+
+}

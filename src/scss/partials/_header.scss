@@ -1,0 +1,226 @@
+header {
+
+  //common
+  padding: 0 $sidespace;
+  padding-top: $nav_height;
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 #{$sidespace / $sidespace_divider_sm};
+    padding-top: $nav_height;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 0 #{$sidespace / $sidespace_divider_xs};
+    padding-top: $nav_height;
+  }
+
+  .container {
+
+    .dropdown {
+      display: none;
+      z-index: 1001;
+      color: $secondary_color;
+      background-color: white;
+      font-size: 1.7em;
+      line-height: 75px;
+      box-shadow: 0px 4px 8px 2px rgba(66, 66, 66, 0.66);
+      width: 100%;
+      position: fixed;
+      top: $nav_height;
+      margin-left: -#{$sidespace};
+      margin-right: -#{$sidespace};
+      @include nav_and_footer_mediaquery;
+
+      @media screen and (max-width: 1199px) {
+        margin-left: -#{$sidespace / $sidespace_divider_sm};
+        margin-right: -#{$sidespace / $sidespace_divider_sm};
+      }
+
+      @media screen and (max-width: 991px) {
+        margin-left: -#{$sidespace / $sidespace_divider_xs};
+        margin-right: -#{$sidespace / $sidespace_divider_xs};
+      }
+
+      .menu {
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+      }
+
+
+    }
+
+    width: 100%;
+
+    //navbar fixed (ends with a hr tag)
+    nav {
+
+      height: $nav_height;
+      line-height: $nav_height;
+      font-size: 1.1em;
+      background-color: #ffffff;
+      width: 100%;
+      min-width: $site_min_width;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 0 $sidespace;
+      display: flex;
+      justify-content: space-between;
+      @include nav_and_footer_mediaquery;
+
+      //logo
+      .col-logo {
+
+        height: 100%;
+        width: 160px;
+
+        img {
+
+          display: block;
+          height: 100%;
+          width: 100%;
+
+        }
+
+      }
+
+      //menu hamburger
+      .hamburger-menu {
+        display: none;
+        font-size: 40px;
+        margin-left: 10px;
+
+        .close {
+
+          display: none;
+
+        }
+
+      }
+
+      //menu normal
+      ul.menu {
+
+        li {
+
+          list-style-type: none;
+          margin-left: 30px;
+          display: inline-block;
+
+          a {
+
+            color: $secondary_color;
+
+          }
+
+          a.sign-up {
+
+            @include my-button;
+            padding: 15px;
+            color: $tertiary_color;
+            background-color: #5b70aa;
+
+          }
+
+        }
+
+      }
+
+      @media screen and (max-width: 1199px) {
+        .menu {
+          display: none;
+        }
+
+        .hamburger-menu {
+          display: block;
+        }
+      }
+
+    }
+
+    hr {
+
+      color: $secondary_color;
+      position: fixed;
+      top: calc(#{$nav_height} - 2px);
+      width: calc(100% - #{$sidespace * 2});
+      min-width: calc(#{$site_min_width} - #{$sidespace} / #{$sidespace_divider_xs / 2});
+
+      @media screen and (max-width: 1199px) {
+        width: calc(100% - #{$sidespace});
+      }
+
+      @media screen and (max-width: 991px) {
+        width: calc(100% - #{$sidespace} / #{$sidespace_divider_xs / 2});
+      }
+
+    }
+
+    //end navbar
+
+    //jumbo
+    .jumbotron {
+
+      margin-top: 60px;
+      display: flex;
+
+      .teaser {
+        flex-basis: 50%;
+        margin-right: 30px;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 1199px) {
+          margin-right: 0px;
+        }
+
+        h2 {
+
+          font-weight: lighter;
+          line-height: 40px;
+          margin-bottom: $linespacing;
+
+        }
+
+        .cta {
+
+          @include call-to-action;
+
+          @media screen and (max-width: 991px) {
+            margin-right: -(#{$sidespace / 5});
+            margin-left: -(#{$sidespace / 5});
+          }
+
+        }
+
+      }
+
+      .background-image {
+
+        flex-basis: 50%;
+
+        img {
+
+          width: 100%;
+
+        }
+
+      }
+
+      @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+    }
+
+    //end jumbo
+
+  }
+
+  //end container
+
+}
+
+//end header

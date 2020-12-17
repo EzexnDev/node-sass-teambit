@@ -1,0 +1,97 @@
+@mixin my-button {
+
+  border: 1px solid $tertiary_color;
+  border-radius: 7px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: $tertiary_color;
+
+  img {
+    width: 25px;
+    vertical-align: middle;
+  }
+}
+
+@mixin call-to-action {
+
+  span {
+    font-weight: lighter;
+  }
+
+  a {
+    color: $secondary_color;
+  }
+
+  a.sign-up {
+
+    @include my-button;
+
+    display: inline-block;
+
+
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-right: 3px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 3px;
+    }
+
+  }
+}
+
+@mixin second_section_row {
+
+  display: flex;
+  margin-top: 50px;
+
+  .col {
+
+    flex-basis: calc(100% / 2);
+
+    img {
+      width: 100%;
+    }
+
+    div {
+      text-align: left;
+      max-width: 60%;
+
+      @media screen and (max-width: 1199px) {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      h3 {
+
+        background-color: inherit;
+        text-align: left;
+        padding: 0;
+
+        @media screen and (max-width: 1199px) {
+          text-align: center;
+        }
+
+      }
+
+    }
+  }
+}
+
+@mixin nav_and_footer_mediaquery {
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 #{$sidespace};
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 0 #{$sidespace / $sidespace_divider_sm};
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 0 #{$sidespace / $sidespace_divider_xs};
+  }
+
+}
