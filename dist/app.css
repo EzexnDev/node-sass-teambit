@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);html {
   font-size: 16px;
   font-weight: 600;
-  color: #58402c;
+  color: #7F14D4;
   font-family: "Roboto", sans-serif;
 }
 
@@ -90,7 +90,7 @@ header .container {
 header .container .dropdown {
   display: none;
   z-index: 1001;
-  color: #58402c;
+  color: #7F14D4;
   background-color: white;
   font-size: 1.7em;
   line-height: 75px;
@@ -162,12 +162,14 @@ header .container nav {
   }
 }
 header .container nav .col-logo {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 160px;
+  justify-content: center;
 }
 header .container nav .col-logo img {
   display: block;
-  height: 100%;
   width: 100%;
 }
 header .container nav .hamburger-menu {
@@ -184,16 +186,16 @@ header .container nav ul.menu li {
   display: inline-block;
 }
 header .container nav ul.menu li a {
-  color: #58402c;
+  color: #7F14D4;
 }
 header .container nav ul.menu li a.sign-up {
-  border: 1px solid #2c4792;
+  border: 1px solid #0E14EE;
   border-radius: 7px;
   padding: 10px;
   color: #ffffff;
-  background-color: #2c4792;
+  background-color: #0E14EE;
   padding: 15px;
-  color: #2c4792;
+  color: #0E14EE;
   background-color: #5b70aa;
 }
 header .container nav ul.menu li a.sign-up img {
@@ -209,7 +211,7 @@ header .container nav ul.menu li a.sign-up img {
   }
 }
 header .container hr {
-  color: #58402c;
+  color: #7F14D4;
   position: fixed;
   top: calc(100px - 2px);
   width: calc(100% - 300px);
@@ -248,14 +250,14 @@ header .container .jumbotron .teaser .cta span {
   font-weight: lighter;
 }
 header .container .jumbotron .teaser .cta a {
-  color: #58402c;
+  color: #7F14D4;
 }
 header .container .jumbotron .teaser .cta a.sign-up {
-  border: 1px solid #2c4792;
+  border: 1px solid #0E14EE;
   border-radius: 7px;
   padding: 10px;
   color: #ffffff;
-  background-color: #2c4792;
+  background-color: #0E14EE;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -293,7 +295,7 @@ main {
 }
 main .traditional-processes,
 main .teambit-solution {
-  background-color: #fee7d1;
+  background-color: #0414B3;
   padding: 0 150px;
 }
 @media screen and (max-width: 1199px) {
@@ -412,7 +414,7 @@ main .how-it-works {
   margin-bottom: 50px;
 }
 main .how-it-works h3 {
-  background-color: #fee7d1;
+  background-color: #0414B3;
   text-align: center;
   padding: 50px 0;
   margin: 0;
@@ -473,7 +475,7 @@ main .how-it-works .row p {
   margin-bottom: 25px;
 }
 main .how-it-works .row a {
-  color: #2c4792;
+  color: #0E14EE;
   font-weight: lighter;
   font-size: 1.3em;
 }
@@ -487,7 +489,7 @@ main .how-it-works .row img:nth-child(2n+2) {
   }
 }
 main .get-started {
-  background-color: #fee7d1;
+  background-color: #0414B3;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -507,7 +509,7 @@ main .get-started .p-box {
   margin-bottom: 80px;
   width: 85%;
   max-width: 600px;
-  border: 2px solid #2c4792;
+  border: 2px solid #0E14EE;
   border-radius: 20px;
   padding: 20px 25px;
 }
@@ -531,7 +533,7 @@ main .get-started .p-box .signature-box img {
   margin-right: 20px;
 }
 main .get-started .p-box .signature-box .signature span:first-child {
-  color: #2c4792;
+  color: #0E14EE;
 }
 main .get-started .p-box .signature-box .signature span:nth-child(3) {
   font-size: 0.9em;
@@ -543,14 +545,14 @@ main .get-started .cta span {
   font-weight: lighter;
 }
 main .get-started .cta a {
-  color: #58402c;
+  color: #7F14D4;
 }
 main .get-started .cta a.sign-up {
-  border: 1px solid #2c4792;
+  border: 1px solid #0E14EE;
   border-radius: 7px;
   padding: 10px;
   color: #ffffff;
-  background-color: #2c4792;
+  background-color: #0E14EE;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -636,7 +638,7 @@ footer .container-flex .col.clearfix .sub-col p {
 }
 footer .container-flex .col.clearfix .sub-col p strong {
   font-size: 0.8em;
-  color: #2c4792;
+  color: #0E14EE;
 }
 @media screen and (max-width: 991px) {
   footer .container-flex .col.clearfix {

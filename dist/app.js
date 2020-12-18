@@ -127,8 +127,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\vforv\boolean\repo-boolean\node-sass-teambit\src\app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! C:\Users\vforv\boolean\repo-boolean\node-sass-teambit\src\scss\app.scss */"./src/scss/app.scss");
+__webpack_require__(/*! /Users/gianmarco/Desktop/Boolean/node-sass-teambit/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /Users/gianmarco/Desktop/Boolean/node-sass-teambit/src/scss/app.scss */"./src/scss/app.scss");
 
 
 /***/ })
